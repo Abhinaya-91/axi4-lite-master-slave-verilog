@@ -42,7 +42,7 @@ The design was synthesized and implemented on the Arty S7-25 board.
 
 The basic I/O test maps the onboard switches to LEDs to verify correct FPGA programming.
 
-![Hardware Output](Docs/hardware_output.jpg)
+![Hardware Output](Docs/hardware_output.jpeg)
 
 🚀 Future Scope
 
