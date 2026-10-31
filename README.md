@@ -3,7 +3,7 @@
 ## 📌 Overview
 This repository contains the complete RTL design, functional simulation, and FPGA implementation of an **AXI4-Lite Master-Slave Bus Interface**. 
 
-Developed using **SystemVerilog**, the project implements the AMBA AXI4-Lite protocol, which is widely used for memory-mapped register access in FPGA and SoC designs. The architecture features a 32-bit address and data bus, a 32-register internal bank, and the standard 5-channel AXI interface with VALID/READY handshaking.
+Developed using **SystemVerilog**, the project implements the  AXI4-Lite protocol, which is widely used for memory-mapped register access in FPGA and SoC designs. The architecture features a 32-bit address and data bus, a 32-register internal bank, and the standard 5-channel AXI interface with VALID/READY handshaking.
 
 The design is simulated using Xilinx Vivado XSim and successfully implemented on the **Digilent Arty S7-25 (Spartan-7) FPGA board**.
 
