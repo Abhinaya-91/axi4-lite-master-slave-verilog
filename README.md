@@ -21,27 +21,28 @@ The design is simulated using Xilinx Vivado XSim and successfully implemented on
 *   **Hardware Verification:** Switch-to-LED mapping (SW0-SW3 to LD2-LD5) to verify FPGA I/O configuration.
 
 📊 Results & Outputs
-1. Simulation Result
-The testbench performs a write operation of Data = 4 at Address = 5, followed by a read operation from the same address. The waveform confirms successful data retrieval, verifying the VALID/READY handshakes.
 
-https://docs/waveform.png
+### 1. Simulation Result
 
-2. FPGA Implementation Results
+The testbench performs a write operation of `Data = 4` at `Address = 5`, followed by a read operation from the same address. The waveform confirms successful data retrieval, verifying the VALID/READY handshakes.
+
+![Simulation Waveform](Docs/waveform.jpeg)
+
+### 2. FPGA Implementation Results
+
 The design was synthesized and implemented on the Arty S7-25 board.
+*   **Device Layout:** Placed across device regions X0Y0 to X1Y2.
+*   **Timing:** Zero Total Negative Slack (TNS), all timing constraints met.
+*   **Power:** Estimated total on-chip power is **0.076 W** (0.074 W static, 0.002 W dynamic).
 
-Device Layout: Placed across device regions X0Y0 to X1Y2.
+![Device Layout](Docs/device_layout.jpeg)
+![Power Report](Docs/power_report.jpeg)
 
-Timing: Zero Total Negative Slack (TNS), all timing constraints met.
+### 3. Hardware Output
 
-Power: Estimated total on-chip power is 0.076 W (0.074 W static, 0.002 W dynamic).
-
-https://docs/device_layout.png
-https://docs/power_report.png
-
-3. Hardware Output
 The basic I/O test maps the onboard switches to LEDs to verify correct FPGA programming.
 
-https://docs/hardware_output.jpg
+![Hardware Output](Docs/hardware_output.jpg)
 
 🚀 Future Scope
 
